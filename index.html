@@ -10,7 +10,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
@@ -27,12 +29,240 @@
                     <li>Beauty Advice</li>
                     <li>Crimson Network</li>
                 </ul>
+                <div class="search">
+                    <input type="text" name="" id="" placeholder="Search Here">
+                    <button class="btn">Search</button>
+                </div>
             </nav>
         </div>
     </header>
     <main>
-        <div>
+        <div class="container">
+            <div class="slider">
+                <img src="https://source.unsplash.com/1600x500/?shopping,ecommerce" alt="">
+            </div>
 
+            <div class="card">
+                <h2 class="my-2">Make Up</h2>
+                <div class="cards">
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?make-up-blush" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Blush</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?eye-liner" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Eye Liner</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?make-up-remover" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Make Up Remover</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?foundation" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Foundation</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?primer" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Primer</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?kajal" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Kajal</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?lipsticks" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Lipsticks</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?eye-shadow-pallet" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Eye Shadow Pallet</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="my-2">Skin Care</h2>
+                <div class="cards">
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?eye-cream" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Eye Cream</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?day-cream" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Day Cream</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?night-cream" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Night Cream</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?spf" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">SPF Cream</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?skin-toner" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Toner</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?skin-wipes" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Facial Wipes</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?moisturizers" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Moisturizer</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?body-cream" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Body Cream</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="my-2">Hair Care</h2>
+                <div class="cards">
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?hair-shampoo" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Shampoo</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?hair-oils" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Oils</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?hair-colour" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Colours</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?hair-smoothning,hair-conditioners" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Conditioner</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?hair,conditioners" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Masks</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?shampoos" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Anti Dandruf</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?hair-fall-products" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Hair Fall Rescue</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?hair-styling-products" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Hair Styling Products</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
