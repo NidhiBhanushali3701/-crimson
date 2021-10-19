@@ -23,15 +23,16 @@
 </head>
 
 <body>
-    <H1>Blog</H1>
+    <H1>Blog About</H1>
     <header>
         <div>
             <nav class="navbar">
                 <ul>
-                    <li>Categories</li>
-                    <li>Brands</li>
-                    <li>Beauty Advice</li>
-                    <li>Crimson Network</li>
+                    <li><a href="{% url 'shop-index' %}" target="_blank">Categories</a></li>
+                    <li><a href="{% url 'shop-about' %}" target="_blank">Brands</a></li>
+                    <li><a href="{% url 'blog-home' %}" target="_blank">Beauty Advice</a></li>
+                    <li><a href="{% url 'blog-about' %}" target="_blank">Crimson Network</a></li>
+                </ul>
                 </ul>
                 <div class="search">
                     <input type="text" name="" id="" placeholder="Search Here">
@@ -365,14 +366,27 @@
             </span>
         </div>
         <!--delete/# this-->
+        <!--<div>-->
+        <!--    {% for social in socials%}-->
+        <!--    <ul>-->
+        <!--            <li class="fa fa-instagram"><a href={{ social.instagram }} target="_blank"></a></li>-->
+        <!--            <li class="fa fa-facebook"><a href={{ social.facebook}} target="_blank"></a></li>-->
+        <!--            <li class="fa fa-twitter"><a href="{{ social.twitter}}" target="_blank"></a></li>-->
+        <!--            <li class="fa fa-github"><a href={{ social.github}} target="_blank"></a></li>-->
+        <!--            <li class="fa fa-linkedin"><a href={{ social.linkedin}}  target="_blank"></a></li>-->
+        <!--    </ul>-->
+        <!--    {% endfor %}-->
+        <!--</div>-->
+        <!--delete/# this-->
+        <!--delete/# this-->
         <div>
             {% for social in socials%}
             <ul>
-                    <li class="fa fa-instagram"><a href={{ social.instagram }} target="_blank"></a></li>
-                    <li class="fa fa-facebook"><a href={{ social.facebook}} target="_blank"></a></li>
-                    <li class="fa fa-twitter"><a href="{{ social.twitter}}" target="_blank"></a></li>
-                    <li class="fa fa-github"><a href={{ social.github}} target="_blank"></a></li>
-                    <li class="fa fa-linkedin"><a href={{ social.linkedin}}  target="_blank"></a></li>
+                    <li class="fa fa-instagram"><a href={{ social.author }} target="_blank"></a></li>
+                    <li class="fa fa-facebook"><a href={{ social.title }} target="_blank"></a></li>
+                    <!--<li class="fa fa-twitter"><a href="{{ social.twitter}}" target="_blank"></a></li>-->
+                    <li class="fa fa-github"><a href={{ social.date_posted }} target="_blank"></a></li>
+                    <li class="fa fa-linkedin"><a href={{ social.content }}  target="_blank"></a></li>
             </ul>
             {% endfor %}
         </div>

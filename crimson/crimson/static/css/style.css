@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
 :root {
     --main-bg-color: #D7416C;
   }
@@ -12,6 +14,7 @@
 header{
     background: var(--main-bg-color);
     font-family: 'Lato', sans-serif;
+    position :sticky;
 }
 
 nav{
@@ -47,6 +50,7 @@ nav ul li a{
 
 nav ul li a:hover{
     font-weight: bolder;
+    color: white;
 }
 
 .search{
@@ -67,6 +71,33 @@ nav ul li a:hover{
     font-weight: 900;
 }
 
+.auth{
+    display: flex;
+    align-items: center;
+    margin: 0 65px 0 65px;
+    padding:0 6px;
+
+}
+button:hover {
+  opacity: 0.8;
+}
+
+input{
+  width: 30%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: block;
+  border: none;
+  background: #ffecf2;
+}
+
+.auth button{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    margin: 0 35px 0 35px;
+    padding:0 12px;
+
+}
 .slider{
     width: 100vw;
     margin: 12px auto;
@@ -81,7 +112,7 @@ nav ul li a:hover{
 
 .my-c-cards{
     display: flex;
-    overflow: hidden;
+    overflow: visible; //hidden;
 }
 
 .my-c-card-item{
@@ -132,4 +163,10 @@ footer .policies-copyright{
 }
 .hrt-love{
     color: #D7416C;
+}
+.carousel-inner {
+    margin: 1vh;
+    position: relative;
+    width: 80vw;
+    overflow: visible;
 }
